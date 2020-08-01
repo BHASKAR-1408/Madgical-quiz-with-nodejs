@@ -5,7 +5,6 @@ const bodyparser = require('body-parser');
 const router = express.Router();
 const app = express();
 app.use(bodyparser.json());
-const port = 5000;
 
 app.use(bodyparser.urlencoded({extended:true}))
 app.use(express.static('views'));
@@ -66,7 +65,7 @@ app.post('/processing',(req,res)=>{
 
 })
 
-
+const port = process.env.PORT || 8000;
 
 app.listen(port,(err)=>{
 	if(err)throw err;
