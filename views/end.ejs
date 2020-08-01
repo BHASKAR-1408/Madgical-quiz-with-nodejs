@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>doc</title>
+</head>
+<body style="background-color: #81d6f0; text-align: center;">
+	<div>
+		<h2>Thanks for playing....</h2>
+		<h3>wrongAnswers:<%= status.w %></h3>
+	    <h3>CorrectAnswers:<%= status.c %></h3>
+	    <h3>level:<%= status.l %></h3>
+	    <form method = "GET" action = "/" >
+            <input type="submit" name="submit" value="RESTART">
+        </form>
+	</div>        
+</body>
+</html>

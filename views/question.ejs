@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body style=" background-color: #81d6f0;">
+    <% if(question == ''){ %>
+        <form method="GET" action="/question" style=" text-align: center;">
+            <h1>WELCOME TO MADGICAL QUIZ</h1><br>
+            <h3>For playing.....</h3><br><br>
+            <input type="submit" name="submit" value="click here">
+        </form>
+    <% }else{ %>
+        <form  method="POST" action="/processing" style="text-align: center;">
+            <h1>level:<%= question[1] %></h1><br>
+            <h1><%= question[0] %></h1>
+            <input type="text" name="answer" style="background: transparent; border: none; border-bottom: 1px solid black">
+            <input type="submit" value="submit" class="submit">
+        </form><br><br>
+        <form method = "GET" action = "/register" style="text-align: center;">
+            <input type="submit" name="submit" value="quite">
+        </form>
+    <% } %>
+</body>
+</html>
