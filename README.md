@@ -5,3 +5,4 @@
 4).If the you give wrong answer then it will reduce you level by its half.
 5).if i want to quite in middle of the quize i can click the quite button.
 6).At last it will show final progress of that quiz as well as i will provide restart button ,if anyone want to restart they can play again.
+Link of this project:-https://madgicalquiz.herokuapp.com/question
